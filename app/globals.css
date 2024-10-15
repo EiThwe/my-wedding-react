@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+body {
+  @apply font-montserrat;
+}
+
+p {
+  @apply text-secondary;
+}
+
+.slick-dots {
+  bottom: 30px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 10px !important;
+  color: white;
+}
+.slick-dots li.slick-active button:before {
+  @apply !text-primary-300;
+}

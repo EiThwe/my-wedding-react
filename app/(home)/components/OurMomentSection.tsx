@@ -7,7 +7,7 @@ const OurMomentSection = () => {
     <section id="our-moments" className="container lg:py-20 py-16">
       <SectionHeader
         title="captured moments"
-        description="Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat"
+        description="These photos showcase the milestones of our love story, reflecting our joy, laughter, and cherished memories together."
       />
       <div className="grid sm:grid-rows-3 sm:grid-cols-3 grid-cols-2 lg:gap-5 sm:gap-3 gap-2 mt-8">
         <div className=" row-span-2 lg:h-auto sm:h-[372px] h-[308px]">

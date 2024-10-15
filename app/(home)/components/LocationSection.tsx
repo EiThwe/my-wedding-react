@@ -9,7 +9,7 @@ const LocationSection = () => {
     <section id="location-guide" className="container lg:py-20 py-16">
       <SectionHeader
         title="Location Guideline"
-        description="Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat"
+        description="Join us at 9 Mile Shan Monestry. Please review directions to ensure a smooth experience. We can't wait to celebrate!"
       />
       <div className="flex sm:flex-row flex-col lg:gap-10 gap-5 mt-8">
         <div className="sm:w-[80%] w-full lg:h-[450px] h-[400px] border-4 border-double border-primary-200 shadow-2xl rounded-sm">

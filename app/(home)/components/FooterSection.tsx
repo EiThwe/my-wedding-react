@@ -1,6 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import SocialIcons from "./SocialIcons";
+const mySocialLinks = {
+  facebook: "https://www.facebook.com/profile.php?id=100008563840418",
+  instagram:
+    "https://www.instagram.com/thwe_thwe_htun/profilecard/?igsh=MWcxdm95M2tkeDk1eQ==",
+  github: "https://github.com/EiThwe",
+  linkedin:
+    "https://www.linkedin.com/in/thwe-thwe-htun-8940181b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+};
 
 const FooterSection = () => {
   return (
@@ -28,7 +36,7 @@ const FooterSection = () => {
           <p className="sm:text-[5rem] text-[3rem] font-parisienne">
             Thank You
           </p>
-          <SocialIcons />
+          <SocialIcons links={mySocialLinks} />
           <p className="text-secondary/50 mt-4 text-center">
             Feel free to contact <span className="text-primary-300">TCUBE</span>{" "}
             to create your own customized invitation website

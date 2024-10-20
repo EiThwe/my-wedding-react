@@ -34,7 +34,7 @@ const PersonProfile: React.FC<PersonProfileProps> = ({
         <Image
           width={512}
           height={512}
-          className="w-full sm:h-[550px] h-[350px] object-cover"
+          className="w-full sm:h-[550px] object-cover"
           alt={name}
           src={imageSrc}
         />

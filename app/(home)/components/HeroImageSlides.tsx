@@ -34,12 +34,12 @@ const HeroImageSlides = () => {
           <div className="flex gap-3 items-center justify-center">
             <hr className="w-14" />
             <p className="text-white uppercase text-center font-medium text-lg tracking-wider">
-              1 Jan 2025
+              5 Jan 2025
             </p>
             <hr className="w-14" />
           </div>
           <div className="lg:mt-16 mt-8">
-            <CountDown targetDate="1 Jan 2025" />
+            <CountDown targetDate="5 Jan 2025" />
           </div>
         </div>
       </div>

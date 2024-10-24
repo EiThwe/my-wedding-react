@@ -1,6 +1,9 @@
+"use client"
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion"; // Import motion from framer-motion
 import SocialIcons from "./SocialIcons";
+
 const mySocialLinks = {
   facebook: "https://www.facebook.com/profile.php?id=100008563840418",
   instagram:
@@ -13,13 +16,13 @@ const mySocialLinks = {
 const FooterSection = () => {
   return (
     <footer className="!w-full lg:pt-20 pt-16">
-      <div className=" relative min-h-screen py-16 bg-cover bg-[url('https://i.postimg.cc/zDpdgcj0/Premium-Vector-Abstract-splashed-watercolor-textured-background.jpg')] bg-no-repeat">
+      <div className="relative min-h-screen py-16 bg-cover bg-[url('https://i.postimg.cc/zDpdgcj0/Premium-Vector-Abstract-splashed-watercolor-textured-background.jpg')] bg-no-repeat">
         <div className="absolute top-0 left-0 w-full h-full bg-white bg-opacity-70 flex flex-col items-center justify-center">
           <div className="relative sm:w-[450px] sm:h-[450px] w-[300px] h-[300px] flex justify-center items-center">
             <Image
               width={512}
               height={512}
-              className="sm:w-[450px] sm:h-[450px] w-[300px] h-[300px absolute top-0 left-0"
+              className="sm:w-[450px] sm:h-[450px] w-[300px] h-[300px] absolute top-0 left-0"
               src={"https://i.postimg.cc/T2mdKHnN/leaves-frame.png"}
               alt="img-frame"
             />
@@ -33,9 +36,14 @@ const FooterSection = () => {
               alt="couple-img"
             />
           </div>
-          <p className="sm:text-[5rem] text-[3rem] font-parisienne">
+          <motion.p
+            className="sm:text-[5rem] text-[3rem] font-parisienne"
+            initial={{ y: 20, opacity: 0 }} // Initial state (slide down)
+            whileInView={{ y: 0, opacity: 1 }} // Final state (slide up)
+            transition={{ duration: 0.5 }} // Transition duration
+          >
             Thank You
-          </p>
+          </motion.p>
           <SocialIcons links={mySocialLinks} />
           <p className="text-secondary/50 mt-4 text-center">
             Feel free to contact <span className="text-primary-300">TCUBE</span>{" "}

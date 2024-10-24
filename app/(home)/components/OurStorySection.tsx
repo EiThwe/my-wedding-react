@@ -49,7 +49,7 @@ const OurStorySection = () => {
         title="Our Story"
         description="Our love story is a lifelong project, continuously evolving and growing, as we build, optimize, and celebrate together."
       />
-      <div className=" w-full lg:py-[5rem] py-16 lg:px-16 sm:px-5 px-8 mt-8 shadow-2xl rounded-sm">
+      <div className=" w-full lg:py-[5rem] py-8 lg:px-16 sm:px-5 px-8 mt-8 shadow-2xl rounded-sm">
         <Timeline items={items} />
         <MobileTimeline items={items} />
       </div>

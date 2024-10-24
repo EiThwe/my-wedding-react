@@ -1,9 +1,18 @@
+"use client"; // Ensure to use this directive if you're using client-side rendering
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const InvitationSection = () => {
   return (
-    <section id="invitation" className="pt-[150px] pb-16 overflow-hidden">
+    <motion.section
+      id="invitation"
+      className="pt-[150px] pb-16 overflow-hidden"
+      initial={{ scale: 0.9 }} // Start at 80% size for the whole section
+      whileInView={{ scale: 1 }} // Scale to 100% size when in view
+      transition={{ duration: 1.5 }} // Animation duration
+      viewport={{ once: true }}
+    >
       <div className="flex justify-center items-center">
         <div className="sm:w-[500px] sm:h-[650px] w-[350px] h-[450px] relative sm:px-0 px-3">
           <Image
@@ -37,7 +46,7 @@ const InvitationSection = () => {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

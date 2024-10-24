@@ -30,7 +30,7 @@ const Sidebar = () => {
         }
         contentClassName="sm:!w-[400px] w-full !p-0 left-auto"
       >
-        <div className="w-full h-screen bg-white">
+        <div className="w-full h-[100dvh] bg-white">
           <div className="px-3 py-5 flex justify-end">
             <button onClick={() => setOpen(false)}>
               <IoClose size={20} className="text-secondary" />

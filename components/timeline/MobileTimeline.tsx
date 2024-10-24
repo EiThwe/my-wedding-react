@@ -8,13 +8,13 @@ const MobileTimeline = ({ items }: PropsType) => {
     <div className="space-y-10 sm:hidden block">
       {items.map((item, i) => (
         <div className="content" key={i}>
-          <h3 className="mb-2 text-[1.7rem] font-medium font-parisienne">
+          <h3 className="mb-2 text-[1.7rem] font-medium text-secondary font-parisienne">
             {item.title}
           </h3>
           <span className=" font-semibold text-primary-300  rounded">
             {item.date}
           </span>
-          <p className="text-gray-600 lg:w-[400px] mt-3">{item.description}</p>
+          <p className="text-gray-400 lg:w-[400px] mt-3">{item.description}</p>
         </div>
       ))}
     </div>

@@ -18,16 +18,16 @@ interface SocialIconsProps {
 const SocialIcons: React.FC<SocialIconsProps> = ({ links }) => {
   return (
     <div className="flex gap-3 text-primary-400 !mt-8">
-      <Link href={links.facebook}>
+      <Link className="hover:-translate-y-1 duration-500 ease-in-out transition-all" href={links.facebook}>
         <FaFacebookF />
       </Link>
-      <Link href={links.instagram}>
+      <Link className="hover:-translate-y-1 duration-500 ease-in-out transition-all" href={links.instagram}>
         <FaInstagram />
       </Link>
-      <Link href={links.github}>
+      <Link className="hover:-translate-y-1 duration-500 ease-in-out transition-all" href={links.github}>
         <FaGithub />
       </Link>
-      <Link href={links.linkedin}>
+      <Link className="hover:-translate-y-1 duration-500 ease-in-out transition-all" href={links.linkedin}>
         <FaLinkedinIn />
       </Link>
     </div>

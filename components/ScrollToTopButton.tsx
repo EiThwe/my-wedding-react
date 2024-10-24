@@ -35,8 +35,8 @@ const ScrollToTopButton = () => {
       <button
         onClick={scrollToTop}
         className={twMerge(
-          "scroll-button w-12 h-12 flex justify-center items-center fixed sm:bottom-5 bottom-16 transition-all ease-in-out duration-500 right-5 bg-primary-300 text-primary-100 border-2 border-primary-400 rounded-full circle-shadow",
-          isVisible ? "translate-y-0" : "translate-y-[5rem]"
+          "scroll-button w-12 h-12 flex justify-center items-center fixed sm:bottom-5 bottom-8 transition-all ease-in-out duration-500 right-5 bg-primary-300 text-primary-100 border-2 border-primary-400 rounded-full circle-shadow",
+          isVisible ? "translate-y-0" : "translate-y-[20rem]"
         )}
       >
         <FaArrowUp />

@@ -29,9 +29,9 @@ const FooterSection = () => {
             <Image
               width={512}
               height={512}
-              className="sm:w-[300px] sm:h-[300px] w-[200px] h-[200px] rounded-full"
+              className="sm:w-[300px] sm:h-[300px] w-[200px] h-[200px] rounded-full object-cover"
               src={
-                "https://i.postimg.cc/W4BMrMFN/photo-2024-09-20-16-14-16.jpg"
+                "https://i.postimg.cc/fbz2QMJY/square.jpg"
               }
               alt="couple-img"
             />

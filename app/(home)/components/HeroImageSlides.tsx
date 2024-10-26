@@ -6,20 +6,25 @@ import CountDown from "./CountDown";
 const HeroImageSlides = () => {
   const slides = [
     {
-      imageSrc: "https://i.postimg.cc/GtWL74Lx/photo-2024-09-20-16-14-13.jpg",
+      imageSrc:
+        "https://i.postimg.cc/26p1BShZ/16-20-Frame-MT-AL-8-M1-A4673.jpg",
       alt: "hero-img-1",
+      position:"object-center"
     },
     {
-      imageSrc: "https://i.postimg.cc/Z5mrqcpZ/photo-2024-09-20-16-14-10.jpg",
+      imageSrc: "https://i.postimg.cc/L8QpWQs4/8M1A4613.jpg",
       alt: "hero-img-2",
+      position:"object-top"
     },
     {
-      imageSrc: "https://i.postimg.cc/Zqh6CLN4/photo-2024-09-20-16-14-09.jpg",
+      imageSrc: "https://i.postimg.cc/htXDKR6Q/hero-4.jpg",
       alt: "hero-img-3",
+      position:"object-top"
     },
     {
-      imageSrc: "https://i.postimg.cc/vmBx1SBR/photo-2024-09-20-16-14-12.jpg",
+      imageSrc: "https://i.postimg.cc/Hs8F6Wyx/8M1A4675.jpg",
       alt: "hero-img-4",
+      position:"object-bottom"
     },
   ];
 
@@ -27,8 +32,8 @@ const HeroImageSlides = () => {
     <section>
       <div className="relative">
         <MyCarousel slides={slides} />
-        <div className="absolute top-0 left-0 bg-black bg-opacity-30 h-full w-full flex flex-col lg:gap-2 gap-5 justify-center items-center">
-          <p className="lg:text-[5rem] text-[3.5rem] font-parisienne font-light text-white">
+        <div className="absolute top-[32%] left-0 w-full flex flex-col lg:gap-0 gap-5 justify-center items-center">
+          <p className="lg:text-[4.5rem] text-[3.5rem] font-parisienne font-light text-white">
             Denny & Thwe
           </p>
           <div className="flex gap-3 items-center justify-center">
@@ -38,7 +43,7 @@ const HeroImageSlides = () => {
             </p>
             <hr className="w-14" />
           </div>
-          <div className="lg:mt-16 mt-8">
+          <div className=" mt-8">
             <CountDown targetDate="5 Jan 2025" />
           </div>
         </div>

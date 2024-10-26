@@ -43,7 +43,7 @@ const PersonProfile: React.FC<PersonProfileProps> = ({
         <Image
           width={512}
           height={512}
-          className="w-full sm:h-[550px] object-cover hover:scale-110 transition-all duration-1000 ease-in-out"
+          className="w-full sm:h-[550px] object-cover object-top hover:scale-110 transition-all duration-1000 ease-in-out"
           alt={name}
           src={imageSrc}
         />

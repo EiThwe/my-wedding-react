@@ -68,7 +68,7 @@ const CountDown: React.FC<PropsType> = ({ targetDate }) => {
   const timerComponents: JSX.Element[] = Object.keys(timeLeft).map((interval) => (
     <div
       key={interval}
-      className="flex flex-col sm:gap-2 gap-1 items-center sm:min-w-24 min-w-20 sm:p-4 py-4 px-1 bg-primary-900 rounded-lg text-primary-100 shadow-lg"
+      className="flex flex-col sm:gap-2 gap-1 items-center sm:min-w-24 min-w-20 sm:p-4 py-4 px-1 bg-primary-800 rounded-lg text-primary-100 shadow-lg"
     >
       <span className="sm:text-4xl text-xl font-semibold">
         {padNumber(timeLeft[interval as keyof TimeLeft])}

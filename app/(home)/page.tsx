@@ -15,7 +15,7 @@ import MessageSection from "./components/MessageSection";
 
 const page = () => {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <WeddingAnnouncement />
       <Header />
       <HeroImageSlides />

@@ -78,7 +78,6 @@ const MessageCarousel: React.FC = () => {
   useEffect(() => {
     const fetchMessage = async () => {
       const response = await axios.get(`${config.BASE_URL}registrations`);
-      console.log(response);
       setSlide(response?.data ?? []);
     };
     fetchMessage();

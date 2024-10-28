@@ -30,7 +30,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  console.log(parisienne);
   return (
     <html lang="en">
       <body

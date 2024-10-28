@@ -14,8 +14,9 @@ const LocationSection = () => {
         description="Join us at 9 Mile Shan Monestry. Please review directions to ensure a smooth experience. We can't wait to celebrate!"
       />
       <div className="flex sm:flex-row flex-col lg:gap-10 sm:gap-5 gap-8 mt-8">
-        <div className="sm:w-[80%] w-full lg:h-[450px] h-[400px] border-4 border-double border-primary-200 shadow-2xl rounded-sm">
+        <div className="sm:w-[80%] w-full lg:h-[450px] h-[400px] border-4 border-double border-primary-200 shadow-lg rounded-sm">
           <iframe
+            title="Map showing our wedding location"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1590.4526841920335!2d96.13943015033385!3d16.87506570605076!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1946471a8777b%3A0xa28e544102e99a0b!2zQXVuZyBNeWF5IEJvbmUgVGhhIFNoYW4gTW9uYXN0ZXJ5LCBQeWF5IFJkLCBZYW5nb24sIOC5gOC4oeC4teC4ouC4meC4oeC4siAo4Lie4Lih4LmI4LiyKQ!5e0!3m2!1sth!2sth!4v1729750093656!5m2!1sth!2sth"
             width="100%"
             height="100%"

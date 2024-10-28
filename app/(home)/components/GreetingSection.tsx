@@ -30,14 +30,14 @@ const GreetingSection: React.FC = () => {
           name="Thwe Thwe"
           greeting="Hi Dear, I'm Thwe Thwe"
           description="I’m a web developer specializing in modern, scalable applications using React, Next.js, TypeScript, and Node.js. I love working on both frontend and backend projects, especially creating reusable components and custom UI elements. As we celebrate our wedding, I’m excited to share this journey with you and showcase my passion for technology and sustainability. I strive to minimize energy waste in my daily life, reflecting my commitment to a greener future. Thank you for joining us on this special occasion!"
-          imageSrc="https://i.postimg.cc/pdd1wP63/greeting-1.jpg"
+          imageSrc="https://i.postimg.cc/SQ7FQ1Q2/greeting-1-1.jpg"
           links={mySocialLinks}
         />
         <PersonProfile
           name="Denny Kate"
           greeting="Hi Dear, I'm Denny Kate"
           description="I'm a passionate full-stack engineer dedicated to crafting elegant solutions to complex problems. With expertise in technologies like React, Next.js, Node.js, and Laravel, I focus on creating responsive and user-friendly applications. As I begin this exciting new chapter in my life, I'm thrilled to share our wedding journey and celebrate this special occasion with our loved ones. Thank you for joining us on this memorable adventure!"
-          imageSrc="https://i.postimg.cc/8kvnQKZk/greeting-2.jpg"
+          imageSrc="https://i.postimg.cc/LsbC8fwb/greeting-2-1.jpg"
           links={hisSocialLinks}
           reverse
         />

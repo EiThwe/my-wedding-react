@@ -39,9 +39,7 @@ const InvitationSection = () => {
             width={512}
             height={1024}
             className="sm:w-[500px] sm:h-[650px] w-[350px] h-[450px] shadow-2xl border border-primary-400/20 rounded-md relative overflow-hidden"
-            src={
-              "https://i.postimg.cc/y6wqc7wP/Brown-Elegant-Wedding-Invitation-Portrait-5.png"
-            }
+            src={"https://i.postimg.cc/RFSx5crJ/wedding-invitation-card.jpg"}
             alt="wedding-invitation"
           />
         </div>

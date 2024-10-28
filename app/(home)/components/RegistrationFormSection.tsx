@@ -145,10 +145,13 @@ const RegistrationFormSection = () => {
                 <Button
                   disabled={isSubmitting}
                   type="submit"
-                  className={twMerge("w-[200px] h-12 text-base")}
+                  className={twMerge("w-[200px] h-12 text-base relative")}
                 >
                   {isSubmitting ? (
-                    <ImSpinner8 size={20} className="animate-spin" />
+                    <>
+                      <ImSpinner8 size={20} className="animate-spin" />
+                      <span className="sr-only">Spinner Loading</span>
+                    </>
                   ) : (
                     "Submit"
                   )}

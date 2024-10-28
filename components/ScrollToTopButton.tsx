@@ -33,6 +33,7 @@ const ScrollToTopButton = () => {
   return (
     <div className="scroll-to-top">
       <button
+        aria-label="Scroll To Top"
         onClick={scrollToTop}
         className={twMerge(
           "scroll-button w-12 h-12 flex justify-center items-center fixed sm:bottom-5 bottom-8 transition-all ease-in-out duration-500 right-5 bg-primary-300 text-primary-100 border-2 border-primary-400 rounded-full circle-shadow",
@@ -40,6 +41,7 @@ const ScrollToTopButton = () => {
         )}
       >
         <FaArrowUp />
+        <span className="sr-only">Scroll To Top</span>
       </button>
     </div>
   );

@@ -1,8 +1,8 @@
-"use client"
-import Image from "next/image";
+"use client";
 import React from "react";
 import { motion } from "framer-motion"; // Import motion from framer-motion
 import SocialIcons from "./SocialIcons";
+import NextGenImage from "@/components/images/NextGenImage";
 
 const mySocialLinks = {
   facebook: "https://www.facebook.com/profile.php?id=100008563840418",
@@ -19,21 +19,20 @@ const FooterSection = () => {
       <div className="relative min-h-screen py-16 bg-cover bg-[url('https://i.postimg.cc/zDpdgcj0/Premium-Vector-Abstract-splashed-watercolor-textured-background.jpg')] bg-no-repeat">
         <div className="absolute top-0 left-0 w-full h-full bg-white bg-opacity-70 flex flex-col items-center justify-center">
           <div className="relative sm:w-[450px] sm:h-[450px] w-[300px] h-[300px] flex justify-center items-center">
-            <Image
+            <NextGenImage
               width={512}
               height={512}
-              className="sm:w-[450px] sm:h-[450px] w-[300px] h-[300px] absolute top-0 left-0"
+              wrapperClassName="sm:w-[450px] sm:h-[450px] w-[300px] h-[300px] absolute z-10 top-0 left-0"
               src={"https://i.postimg.cc/T2mdKHnN/leaves-frame.png"}
               alt="img-frame"
             />
-            <Image
+            <NextGenImage
               width={512}
               height={512}
-              className="sm:w-[300px] sm:h-[300px] w-[200px] h-[200px] rounded-full object-cover"
-              src={
-                "https://i.postimg.cc/fbz2QMJY/square.jpg"
-              }
+              wrapperClassName="sm:w-[300px] sm:h-[300px] w-[200px] h-[200px] rounded-full object-cover"
+              src={"https://i.postimg.cc/xT0JxZF9/footer-image.jpg"}
               alt="couple-img"
+              enableScale
             />
           </div>
           <motion.p

@@ -15,18 +15,20 @@ import MessageSection from "./components/MessageSection";
 
 const page = () => {
   return (
-    <main className="overflow-x-hidden">
+    <main>
       <WeddingAnnouncement />
       <Header />
-      <HeroImageSlides />
-      <InvitationSection />
-      <GreetingSection />
-      <OurStorySection />
-      <OurMomentSection />
-      <LocationSection />
-      <MessageSection />
-      <RegistrationFormSection />
-      <FooterSection />
+      <section className="overflow-x-hidden">
+        <HeroImageSlides />
+        <InvitationSection />
+        <GreetingSection />
+        <OurStorySection />
+        <OurMomentSection />
+        <LocationSection />
+        <MessageSection />
+        <RegistrationFormSection />
+        <FooterSection />
+      </section>
     </main>
   );
 };

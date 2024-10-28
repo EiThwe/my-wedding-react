@@ -3,31 +3,30 @@ import MyCarousel from "@/components/MyCarousel";
 import React from "react";
 import CountDown from "./CountDown";
 
-const HeroImageSlides = () => {
-  const slides = [
-    {
-      imageSrc:
-        "https://i.postimg.cc/26p1BShZ/16-20-Frame-MT-AL-8-M1-A4673.jpg",
-      alt: "hero-img-1",
-      position:"object-center"
-    },
-    {
-      imageSrc: "https://i.postimg.cc/L8QpWQs4/8M1A4613.jpg",
-      alt: "hero-img-2",
-      position:"object-top"
-    },
-    {
-      imageSrc: "https://i.postimg.cc/htXDKR6Q/hero-4.jpg",
-      alt: "hero-img-3",
-      position:"object-top"
-    },
-    {
-      imageSrc: "https://i.postimg.cc/Hs8F6Wyx/8M1A4675.jpg",
-      alt: "hero-img-4",
-      position:"object-bottom"
-    },
-  ];
+const slides = [
+  {
+    imageSrc: "https://i.postimg.cc/kXgTKTCp/hero-1-1.jpg",
+    alt: "hero-img-1",
+    position: "object-center",
+  },
+  {
+    imageSrc: "https://i.postimg.cc/6QJVjcsw/hero-2.jpg",
+    alt: "hero-img-2",
+    position: "object-top",
+  },
+  {
+    imageSrc: "https://i.postimg.cc/8c6P0RgQ/hero-3.jpg",
+    alt: "hero-img-3",
+    position: "object-top",
+  },
+  {
+    imageSrc: "https://i.postimg.cc/L4ctvSrw/hero-4-1.jpg",
+    alt: "hero-img-4",
+    position: "object-bottom",
+  },
+];
 
+const HeroImageSlides = () => {
   return (
     <section>
       <div className="relative">

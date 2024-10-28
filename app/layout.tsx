@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: "D & T - Save the date",
   description:
     "Join us in celebrating a special occasion! Mark your calendars and save the date for a memorable event filled with love and joy.",
+  openGraph: {
+    images: ["https://i.postimg.cc/vmBx1SBR/photo-2024-09-20-16-14-12.jpg"],
+  },
 };
 
 export default function RootLayout({

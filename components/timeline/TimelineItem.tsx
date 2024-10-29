@@ -41,7 +41,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
         })}
         initial={{ x: isRight ? 100 : -100, opacity: 0 }} // Start from the side and hidden
         whileInView={{ x: 0, opacity: 1 }} // Move to center and become visible
-        transition={{ duration: 1.5 }} // Duration of the animation
+        transition={{ duration: 2 }} // Duration of the animation
         viewport={{ once: true }}
       >
         <Image
@@ -62,7 +62,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
         })}
         initial={{ x: isRight ? -100 : 100, opacity: 0 }} // Start from the side and hidden
         whileInView={{ x: 0, opacity: 1 }} // Move to center and become visible
-        transition={{ duration: 1.5 }} // Duration of the animation
+        transition={{ duration: 2 }} // Duration of the animation
         viewport={{ once: true }}
       >
         <div className="content">

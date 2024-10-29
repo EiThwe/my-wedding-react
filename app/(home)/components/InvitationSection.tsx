@@ -10,7 +10,7 @@ const InvitationSection = () => {
       className="pt-[150px] pb-16 overflow-hidden"
       initial={{ scale: 0.9 }} // Start at 80% size for the whole section
       whileInView={{ scale: 1 }} // Scale to 100% size when in view
-      transition={{ duration: 1.5 }} // Animation duration
+      transition={{ duration: 2 }} // Animation duration
       viewport={{ once: true }}
     >
       <div className="flex justify-center items-center">

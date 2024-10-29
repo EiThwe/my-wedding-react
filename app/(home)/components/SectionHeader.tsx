@@ -18,7 +18,7 @@ const SectionHeader = ({ title, description }: PropsType) => {
       <motion.div
         initial={{ opacity: 0, y: 20 }} // Initial state for image
         whileInView={{ opacity: 1, y: 0 }} // Animate to visible state when in view
-        transition={{ duration: 1.5 }} // Animation duration for image
+        transition={{ duration: 2 }} // Animation duration for image
         viewport={{ once: true }}
       >
         <Image
@@ -35,7 +35,7 @@ const SectionHeader = ({ title, description }: PropsType) => {
         <motion.h2
           initial={{ opacity: 0, y: 20 }} // Initial state for title
           whileInView={{ opacity: 1, y: 0 }} // Animate to visible state when in view
-          transition={{ duration: 1.5 }} // Animation duration for title
+          transition={{ duration: 2 }} // Animation duration for title
           viewport={{ once: true }}
           className="sm:text-4xl text-[2rem] uppercase font-semibold text-secondary"
         >
@@ -48,7 +48,7 @@ const SectionHeader = ({ title, description }: PropsType) => {
             key={index}
             initial={{ opacity: 0, y: 20 }} // Initial state for description lines
             whileInView={{ opacity: 1, y: 0 }} // Animate to visible state when in view
-            transition={{ duration: 1.5, delay: index * 0.2 }} // Staggered delay based on the line index
+            transition={{ duration: 2, delay: index * 0.2 }} // Staggered delay based on the line index
             viewport={{ once: true }}
             className="sm:w-[500px] w-full font-normal text-gray-400 leading-7"
           >

@@ -2,31 +2,42 @@
 import MyCarousel from "@/components/MyCarousel";
 import React from "react";
 import CountDown from "./CountDown";
-
-const slides = [
-  {
-    imageSrc: "https://i.postimg.cc/kXgTKTCp/hero-1-1.jpg",
-    alt: "hero-img-1",
-    position: "object-center",
-  },
-  {
-    imageSrc: "https://i.postimg.cc/6QJVjcsw/hero-2.jpg",
-    alt: "hero-img-2",
-    position: "object-top",
-  },
-  {
-    imageSrc: "https://i.postimg.cc/8c6P0RgQ/hero-3.jpg",
-    alt: "hero-img-3",
-    position: "object-top",
-  },
-  {
-    imageSrc: "https://i.postimg.cc/L4ctvSrw/hero-4-1.jpg",
-    alt: "hero-img-4",
-    position: "object-bottom",
-  },
-];
+import useIsMobile from "@/hooks/useIsMobile";
 
 const HeroImageSlides = () => {
+  const isMobile = useIsMobile();
+
+  const slides = [
+    {
+      imageSrc: isMobile
+        ? "https://i.postimg.cc/xddSHYNb/8M1A4634.jpg" // Mobile image
+        : "https://i.postimg.cc/26p1BShZ/16-20-Frame-MT-AL-8-M1-A4673.jpg", // Desktop image
+      alt: "hero-img-1",
+      position: "object-center",
+    },
+    {
+      imageSrc: isMobile
+        ? "https://i.postimg.cc/x8XCPMkM/8M1A4636.jpg" // Mobile image
+        : "https://i.postimg.cc/L8QpWQs4/8M1A4613.jpg", // Desktop image
+      alt: "hero-img-2",
+      position: "object-top",
+    },
+    {
+      imageSrc: isMobile
+        ? "https://i.postimg.cc/44vZr8Gy/8M1A4633.jpg" // Mobile image
+        : "https://i.postimg.cc/htXDKR6Q/hero-4.jpg", // Desktop image
+      alt: "hero-img-3",
+      position: "object-top",
+    },
+    {
+      imageSrc: isMobile
+        ? "https://i.postimg.cc/hjPbcywn/8M1A4611.jpg" // Mobile image
+        : "https://i.postimg.cc/Hs8F6Wyx/8M1A4675.jpg", // Desktop image
+      alt: "hero-img-4",
+      position: "object-bottom",
+    },
+  ];
+
   return (
     <section>
       <div className="relative">
@@ -42,7 +53,7 @@ const HeroImageSlides = () => {
             </p>
             <hr className="w-14" />
           </div>
-          <div className=" mt-8">
+          <div className="mt-8">
             <CountDown targetDate="5 Jan 2025" />
           </div>
         </div>
@@ -50,4 +61,5 @@ const HeroImageSlides = () => {
     </section>
   );
 };
+
 export default HeroImageSlides;

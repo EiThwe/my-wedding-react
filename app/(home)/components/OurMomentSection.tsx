@@ -30,7 +30,7 @@ const OurMomentSection = () => {
     {
       src: "https://i.postimg.cc/rp0VJNg0/8M1A4664.jpg",
       alt: "timeline-5",
-      span: "lg:h-[220px] sm:h-[180px]",
+      span: "lg:h-[250px] sm:h-[180px]",
     },
     {
       src: "https://i.postimg.cc/65xNJNcQ/8M1A4657.jpg", //https://i.postimg.cc/65xNJNcQ/8M1A4657.jpg
@@ -40,12 +40,12 @@ const OurMomentSection = () => {
     {
       src: "https://i.postimg.cc/NFktCNWD/8M1A4641.jpg",
       alt: "timeline-7",
-      span: "lg:h-[220px] sm:h-[180px]",
+      span: "lg:h-[250px] sm:h-[180px]",
     },
   ];
 
   return (
-    <section id="our-moments" className="container lg:py-20 py-16">
+    <section id="our-moments" className="lg:px-[11rem] px-2 lg:py-20 py-16">
       <SectionHeader
         title="captured moments"
         description="These photos showcase the milestones of our love story, reflecting our joy, laughter, and cherished memories together."

@@ -17,8 +17,11 @@ import { Form } from "@/components/ui/form";
 import { ImSpinner8 } from "react-icons/im";
 import { twMerge } from "tailwind-merge";
 import config from "@/app/config";
+import { encryptor } from "@/lib/encryption";
+import useReCaptcha from "@/hooks/use-recaptcha";
 
 const RegistrationFormSection = () => {
+  const { verifyRecaptcha } = useReCaptcha();
   // Initialize the form with validation using Zod
   const form = useForm<z.infer<typeof registrationFormSchema>>({
     resolver: zodResolver(registrationFormSchema),
@@ -42,14 +45,23 @@ const RegistrationFormSection = () => {
   // Handle form submission
   const onSubmit = async (data: z.infer<typeof registrationFormSchema>) => {
     try {
+      const token = await verifyRecaptcha();
+
+      console.log("token => ", token);
+
       const newData = { ...data, noOfGuests: parseInt(data["noOfGuests"]) };
 
-      const response = await axios.post(
-        `${config.BASE_URL}registrations`,
-        newData
-      );
-      console.log("Form submitted successfully:", response.data);
-      form.reset();
+      // Encrypt the data before sending
+      const { iv, encryptedData } = encryptor(newData);
+
+      // Send the encrypted data to your Node.js server
+      await axios.post(`${config.BASE_URL}registrations`, {
+        iv,
+        encryptedData,
+        token,
+      });
+
+      form.reset(); // Reset the form
     } catch (error) {
       console.error("Submission error:", error);
     }

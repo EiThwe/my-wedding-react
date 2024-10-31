@@ -12,6 +12,7 @@ import FooterSection from "./components/FooterSection";
 import OurMomentSection from "./components/OurMomentSection";
 import LocationSection from "./components/LocationSection";
 import MessageSection from "./components/MessageSection";
+import RecaptchaProvider from "@/components/providers/RecaptchaProvider";
 
 const page = () => {
   return (
@@ -26,7 +27,9 @@ const page = () => {
         <OurMomentSection />
         <LocationSection />
         <MessageSection />
-        <RegistrationFormSection />
+        <RecaptchaProvider>
+          <RegistrationFormSection />
+        </RecaptchaProvider>
         <FooterSection />
       </section>
     </main>

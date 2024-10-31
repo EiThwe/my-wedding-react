@@ -12,6 +12,10 @@ p {
   @apply text-secondary;
 }
 
+.grecaptcha-badge {
+  visibility: hidden !important;
+}
+
 .slick-dots {
   bottom: 30px !important;
 }

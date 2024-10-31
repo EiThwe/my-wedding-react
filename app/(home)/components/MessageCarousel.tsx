@@ -2,6 +2,7 @@
 "use client";
 import config from "@/app/config";
 import ResponsiveCard from "@/components/ResponsiveCard";
+import { decryptor } from "@/lib/encryption";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
@@ -42,12 +43,24 @@ const settings = {
   ],
 };
 const MessageCarousel: React.FC = () => {
-  const [slides, setSlide] = useState([]);
+  const [slides, setSlides] = useState([]);
+
   useEffect(() => {
     const fetchMessage = async () => {
-      const response = await axios.get(`${config.BASE_URL}registrations`);
-      setSlide(response?.data ?? []);
+      try {
+        const response = await axios.get(`${config.BASE_URL}registrations`);
+        const { iv, encryptedData } = response.data;
+
+        // Decrypt the fetched data
+        const decryptedData = decryptor(iv, encryptedData);
+
+        // Set the decrypted data in the state
+        setSlides((decryptedData as any) ?? []);
+      } catch (error) {
+        console.error("Error fetching or decrypting data:", error);
+      }
     };
+
     fetchMessage();
   }, []);
 

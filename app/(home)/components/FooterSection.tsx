@@ -59,7 +59,15 @@ const FooterSection = () => {
             to create your own customized invitation website
           </p>
           <p className="text-secondary/50 mt-4">
-            &#169; 2024 by <span className="text-primary-300">TCUBE</span>{" "}
+            &#169; 2024 by{" "}
+            <Link
+              href={
+                "https://www.facebook.com/profile.php?id=100008563840418&mibextid=ZbWKwL"
+              }
+              className="text-primary-300"
+            >
+              TCUBE
+            </Link>
           </p>
         </div>
       </div>

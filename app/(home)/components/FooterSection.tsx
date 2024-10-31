@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion"; // Import motion from framer-motion
 import SocialIcons from "./SocialIcons";
 import NextGenImage from "@/components/images/NextGenImage";
+import Link from "next/link";
 
 const mySocialLinks = {
   facebook: "https://www.facebook.com/profile.php?id=100008563840418",
@@ -45,7 +46,16 @@ const FooterSection = () => {
           </motion.p>
           <SocialIcons links={mySocialLinks} />
           <p className="text-secondary/50 mt-4 text-center">
-            Feel free to contact <span className="text-primary-300">TCUBE</span>{" "}
+            Feel free to contact{" "}
+            <Link
+              href={
+                "https://www.facebook.com/profile.php?id=100008563840418&mibextid=ZbWKwL"
+              }
+              target="_blank"
+              className="text-primary-300"
+            >
+              TCUBE
+            </Link>{" "}
             to create your own customized invitation website
           </p>
           <p className="text-secondary/50 mt-4">

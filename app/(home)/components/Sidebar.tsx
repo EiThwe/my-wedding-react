@@ -33,7 +33,7 @@ const Sidebar = () => {
             <span className="sr-only">Menu Button</span>
           </button>
         }
-        contentClassName="sm:!w-[400px] w-full !p-0 left-auto"
+        contentClassName="sm:!w-[400px] w-full !p-0 left-auto z-[200]"
       >
         <div className="w-full h-[100dvh] bg-white">
           <div className="px-3 py-5 flex justify-end">

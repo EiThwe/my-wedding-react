@@ -1,6 +1,7 @@
 // types.ts
 export interface Slide {
-  imageSrc: string;
+  mobileSrc: string;
+  desktopSrc: string;
   alt: string;
   position: string;
 }

@@ -24,12 +24,7 @@ const MyCarousel: React.FC<MyCarouselProps> = ({ slides }) => {
     <div className="relative overflow-hidden">
       <Slider className="max-w-[100vw]" {...settings}>
         {slides.map((slide, index) => (
-          <CarouselItem
-            key={index}
-            imageSrc={slide.imageSrc}
-            position={slide.position}
-            alt={slide.alt}
-          />
+          <CarouselItem key={index} {...slide} />
         ))}
       </Slider>
     </div>

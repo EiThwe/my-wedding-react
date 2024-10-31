@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Join us in celebrating a special occasion! Mark your calendars and save the date for a memorable event filled with love and joy.",
   openGraph: {
-    images: ["https://i.postimg.cc/vmBx1SBR/photo-2024-09-20-16-14-12.jpg"],
+    images: ["https://i.postimg.cc/26p1BShZ/16-20-Frame-MT-AL-8-M1-A4673.jpg"],
   },
 };
 

@@ -22,7 +22,7 @@ const FooterSection = () => {
             <NextGenImage
               width={512}
               height={512}
-              wrapperClassName="sm:w-[450px] sm:h-[450px] w-[300px] h-[300px] absolute z-10 top-0 left-0"
+              wrapperClassName="sm:w-[450px] sm:h-[450px] w-[300px] h-[300px] absolute z-[5] top-0 left-0"
               src={"https://i.postimg.cc/T2mdKHnN/leaves-frame.png"}
               alt="img-frame"
             />

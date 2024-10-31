@@ -1,12 +1,15 @@
 import Image from "next/image"; // Adjust the path as needed
 import { Slide } from "./types";
 import { twMerge } from "tailwind-merge";
+import useIsMobile from "@/hooks/useIsMobile";
 
-const CarouselItem: React.FC<Slide> = ({ imageSrc, position }) => {
+const CarouselItem: React.FC<Slide> = ({ mobileSrc, desktopSrc, position }) => {
+  const isMobile = useIsMobile();
+
   return (
     <div className="h-[750px] relative">
       <Image
-        src={imageSrc}
+        src={isMobile ? mobileSrc : desktopSrc}
         alt="hero"
         width={1024}
         height={512}
